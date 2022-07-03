@@ -1,8 +1,4 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class ManipuladorArquivo {
@@ -25,7 +21,8 @@ public class ManipuladorArquivo {
         BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path));
         int tel = 911111111;
         for (int i = 0;i<99999999;i++) {
-            buffWrite.append("11" + tel + i + "\n");
+            tel++;
+            buffWrite.append("11" + tel +"\n");
         }
         buffWrite.close();
     }
