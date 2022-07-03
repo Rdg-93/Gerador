@@ -2,10 +2,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileGerador {
-    public static void main(String args[]) throws IOException {
-
-        public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
 
             File arquivo = new File("/home/rdg/Documentos/Gerado");
             try {
@@ -16,9 +13,9 @@ public class FileGerador {
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
-        }
 
         String path = "/home/rdg/Documentos/Gerado";
-        ManipuladorArquivo.leitor(path);
+
+            ManipuladorArquivo.escritor(path);
     }
 }
